@@ -17,5 +17,4 @@ public interface LutadorRepository extends JpaRepository<Lutador, Integer> {
     @Query("select l from Lutador l where vida = 0")
     List<Lutador> findAllMortos();
 
-
 }
